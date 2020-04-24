@@ -1,0 +1,10 @@
+﻿-------------------------------------------------
+Version : 0.5
+Date :    24.04.2020
+-------------------------------------------------
+
+Première version du thème xswatch 4 pour xoops 2.5.10
+
+But : 
+Rendre compatible le thème xswatch4 pour XOOPS 2.5.11x vers XOOPS 2.5.10 (XOOPS 2.5.9 possible, à tester)
+
