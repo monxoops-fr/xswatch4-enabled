@@ -15,4 +15,5 @@ Améliorations / Ajouts :
 - Mise à jour des dernières surcharges de modules disponibles
 
 Bugs connus :
-- Rédaction d'un Message privé via MP : le formulaire génère des retour chariot pour chaque élément (/modules/pm/pmlite.php)
+- Rédaction d'un Message privé via MP : le formulaire génère des retours à la ligne pour chaque élément (/modules/pm/pmlite.php)
+  Ce problème a été réglé dans le Core XOOPS 2.5.11.
