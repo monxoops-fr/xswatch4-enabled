@@ -1,4 +1,5 @@
 <?php
+
 define('THEME_INFO', 'Info');
 define('THEME_CLOSE', 'Fermer');
 
@@ -23,8 +24,6 @@ define('THEME_ACCOUNT_TOOLBAR', 'Barre d\'outils');
 
 //Slider
 define('THEME_READMORE', 'Lire la suite');
-															  
-																   
 
 //Home Message
 define('THEME_ABOUTUS', 'À propos de nous');
@@ -50,13 +49,6 @@ define('THEME_LOGIN', 'Votre nom d\'utilisateur');
 define('THEME_PASS', 'Votre mot de passe');
 define('THEME_EMAIL', 'Votre Courriel');
 
-define('THEME_NOTREGISTERED', 'Pas encore inscrit ? <!-- <a href="/modules/profile/register.php"> --> <span class="text-muted">Inscrivez-vous !</span><!--</a>-->');
-define('THEME_LOSTPASSWORD', 'Mot de passe oublié ?');
-define('THEME_NOPROBLEM', 'Saisissez l\'adresse courriel de votre compte.');
-define('THEME_YOUREMAIL', 'Votre Courriel :');
-define('THEME_SENDPASSWORD', 'Envoyer le mot de passe');
-define('THEME_REMEMBERME', 'Se souvenir de moi');
-
 //Cookie consent -- escape for javascript if needed
 define('THEME_COOKIE_MESSAGE', 'Ce site utilise des cookies pour vous fournir la meilleure expérience sur notre site.');
 define('THEME_COOKIE_DISMISS', 'Compris !');
@@ -74,6 +66,8 @@ define('THEME_TOOLBAR_SYSTEM_MODULE', 'Module Système');
 define('THEME_TOOLBAR_GENERAL_SETTINGS', 'Préférences générales');
 define('THEME_TOOLBAR_TOOLS', 'Outils');
 define('THEME_TOOLBAR_SYSTEM_OPTIONS', 'Options du système');
+define('THEME_TOOLBAR_DEBUGMODE', 'Mode Debug');
+define('THEME_TOOLBAR_THIS_MODULE', 'Ce Module');
 define('THEME_TOOLBAR_MODULES', 'Modules');
 define('THEME_TOOLBAR_BLOCKS', 'Blocs');
 define('THEME_TOOLBAR_TEMPLATES', 'Modèles');
@@ -98,4 +92,23 @@ define('THEME_TOOLBAR_EDIT_THIS_BLOCK', 'Éditer ce Bloc');
 define('THEME_COMMENT_ADD', 'Ajouter un commentaire');
 define('THEME_COMMENT_OPTIONS', 'Options d\'affichage des commentaires :');
 
+define('THEME_PERMISSIONS_LEGEND', 'Permissions &amp; Légendes');
 
+define('THEME_INBOX_ALERT', '!!! Message(s) privé(s) !!!');
+define('THEME_INBOX_LINK', 'Cliquez ici pour atteindre votre boite mail !');
+
+define('THEME_EVENT_DOWNLOADS', 'Evènement de Téléchargements');
+define('THEME_FILE_NAME', 'Fichier');
+define('THEME_FILE_SIZE', 'Taille');
+
+define('THEME_CONTROL_NEXT', 'Suivant');
+define('THEME_CONTROL_PREVIOUS', 'Précédent');
+
+/*
+define('THEME_NOTREGISTERED', 'Pas encore inscrit ? <!-- <a href="/modules/profile/register.php"> --> <span class="text-muted">Inscrivez-vous !</span><!--</a>-->');
+define('THEME_LOSTPASSWORD', 'Mot de passe oublié ?');
+define('THEME_NOPROBLEM', 'Saisissez l\'adresse courriel de votre compte.');
+define('THEME_YOUREMAIL', 'Votre Courriel :');
+define('THEME_SENDPASSWORD', 'Envoyer le mot de passe');
+define('THEME_REMEMBERME', 'Se souvenir de moi');
+*/
