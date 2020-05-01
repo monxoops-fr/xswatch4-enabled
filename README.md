@@ -7,6 +7,7 @@
 
 By alain01
 
+---
 
 xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
 
@@ -25,47 +26,12 @@ The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerul
   You can pick from any of the 21 variations theme. 'cerulean' is the default thème.
   In the /css directory, modify the 3 files (bootstrap.min.css, cookieconsent.css and xoops.css) the string "css-cerulean" to a valid value.
   Valid values are:
-  > css-cerulean
+  > css-cerulean - css-cosmo - css-cyborg - css-darkly - css-flaty - css-journal - css-litera
   
-  > css-cosmo
+  > css-lumen - css-lux - css-materia - css-minty - css-pulse - css-sandstone - css-simplex 
   
-  > css-cyborg
+  > css-sketchy - css-slate - css-solar - css-spacelab - css-superhero - css-united - css-yeti
   
-  > css-darkly
-  
-  > css-flaty
-  
-  > css-journal
-  
-  > css-litera
-  
-  > css-lumen
-  
-  > css-lux
-  
-  > css-materia
-  
-  > css-minty
-  
-  > css-pulse
-  
-  > css-sandstone
-  
-  > css-simplex
-  
-  > css-sketchy
-  
-  > css-slate
-  
-  > css-solar
-  
-  > css-spacelab
-  
-  > css-superhero
-  
-  > css-united
-  
-  > css-yeti
 - customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
 - customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
 - enable a slider in theme.tpl and tpl/slider.tpl
