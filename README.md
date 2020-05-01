@@ -1,8 +1,10 @@
 # xSwatch4-extended
 
 
-#### Adaptation pour XOOPS 2.5.10 du thème xswatch4 en Bootsrap 4 (créé par geekwright pour XOOPS 2.5.11)
-#### Fonctionne aussi sous XOOPS 2.5.11
+**Adaptation pour XOOPS 2.5.10 du thème xSwatch 4 en Bootstrap 4 (créé par geekwright pour XOOPS 2.5.11)**
+
+**Fonctionne aussi sous XOOPS 2.5.11**
+
 By alain01
 
 
