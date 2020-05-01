@@ -1,9 +1,9 @@
 xSwatch4-extended
 =================
 
-Thème xswatch4 en Bootsrap4 crée par geekwright pour XOOPS 2.5.11
-et adapté par alain01 pour fonctionner également sur un XOOPS 2.5.10
-
+Adaptation pour XOOPS 2.5.10 par alain 01 du
+Thème xswatch4 en Bootsrap 4 créé par geekwright pour XOOPS 2.5.11
+Fonctionne aussi sous XOOPS 2.5.11
 
 =======================================================================
 
