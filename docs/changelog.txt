@@ -1,15 +1,19 @@
 ﻿-------------------------------------------------
-Version : 1.0
-Date :    01.05.2020
+Version	: 1.0
+Date	: 01.05.2020
 -------------------------------------------------
 
-Première version du thème xswatch 4 pour xoops 2.5.10
-
-But : Rendre compatible le thème xswatch4 pour XOOPS 2.5.11x vers XOOPS 2.5.10 (XOOPS 2.5.9 possible, à tester)
-(Modification theme_autorun.php => acces direct au fichier nécessaire : XoopsFormRendererBootstrap4.php)
+Première version du thème xswatch4-enabled
+Thème xswatch4 en Bootsrap4 crée par geekwright pour XOOPS 2.5.11
+et adapté par alain01 pour fonctionner également sur un XOOPS 2.5.10
 
 Améliorations / Ajouts :
 - Ajout de la traduction allemande (Goffy)
-- Ajout de la traduction française
-- Ajout de la traduction espagnole
+- Ajout de la traduction italienne (luciorota)
+- Ajout de la traduction espagnole (Alain01)
 - Mise à jour des dernières surcharges de modules disponibles
+
+Adaptation pour XOOPS 2.5.10 :
+
+geekwright/alain01	: XoopsFormRendererBootstrap4.php in theme's directory (/theme_autorun.php & XoopsFormRendererBootstrap4.php)
+GregMage/alain01	: /css directory & 3 import files (@import url) & documentation

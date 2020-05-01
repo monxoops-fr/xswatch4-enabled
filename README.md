@@ -1,5 +1,11 @@
-xSwatch4
-=======
+xSwatch4-extended
+=================
+
+Thème xswatch4 en Bootsrap4 crée par geekwright pour XOOPS 2.5.11
+et adapté par alain01 pour fonctionner également sur un XOOPS 2.5.10
+
+
+=======================================================================
 
 xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
 
@@ -15,10 +21,13 @@ Features:
 Customize xSwatch:
 
 - 21 themes in 1 theme (Preview : [Bootswatch](https://bootswatch.com/))
-  In the file _tpl/xswatchCss.tpl_, edit the bottom line to match the Bootswatch theme of your 
-  choice. By default, the line reads **css-cerulean**. To change to a dark theme, like the one 
-  used in the original xswatch for example, change it to **css-slate**.
-  You can pick from any of the 21 variations listed in the comments in _tpl/xswatchCss.tpl_  
+  You can pick from any of the 21 variations theme. 'cerulean' is the default thème.
+  In the /css directory, modify the 3 files (bootstrap.min.css, cookieconsent.css and xoops.css) the string "css-cerulean" to a valid value.
+  Valid values are:
+  css-cerulean	css-cosmo		css-cyborg    	css-darkly    	css-flaty		css-journal   	css-litera
+  css-lumen		css-lux       	css-materia		css-minty     	css-pulse     	css-sandstone 	css-simplex
+  css-sketchy	css-slate  		css-solar     	css-spacelab	css-superhero 	css-united  	css-yeti
+ 
 - customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
 - customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
 - enable a slider in theme.tpl and tpl/slider.tpl
