@@ -3,21 +3,21 @@
 
 #### Adaptation pour XOOPS 2.5.10 du thème xswatch4 en Bootsrap 4 (créé par geekwright pour XOOPS 2.5.11)
 #### Fonctionne aussi sous XOOPS 2.5.11
-By alain01
+###### By alain01
 ---
 
 xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
 
 The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerulean/).
 
-Features:
+### Features:
 
 - Emphasis on better mobile experience
 - Self hosted, with no off domain resources required
 - Built in cookie consent
 - Administrator toolbar with block edit feature
 
-Customize xSwatch:
+### Customize xSwatch:
 
 - 21 themes in 1 theme (Preview : [Bootswatch](https://bootswatch.com/))
   You can pick from any of the 21 variations theme. 'cerulean' is the default thème.
@@ -52,7 +52,7 @@ In addition to templates for the modules included in XOOPS (pm, profile and syst
 - xoopsfaq - [XoopsModules25x/xoopsfaq](https://github.com/XoopsModules25x/xoopsfaq)
 
 
-Credits:
+### Credits:
 
 - Grégory Mage - [xm modules templates](https://github.com/GregMage)
 - Twitter Bootstrap - [Bootstrap](https://getbootstrap.com)
