@@ -1,4 +1,4 @@
-# xSwatch4-extended
+# xSwatch4-enabled
 
 
 **Adaptation pour XOOPS 2.5.10 du thème xSwatch 4 en Bootstrap 4 (créé par geekwright pour XOOPS 2.5.11)**
