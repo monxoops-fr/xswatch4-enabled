@@ -24,25 +24,45 @@ The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerul
   In the /css directory, modify the 3 files (bootstrap.min.css, cookieconsent.css and xoops.css) the string "css-cerulean" to a valid value.
   Valid values are:
   > css-cerulean
+  
   > css-cosmo
+  
   > css-cyborg
+  
   > css-darkly
+  
   > css-flaty
+  
   > css-journal
+  
   > css-litera
+  
   > css-lumen
+  
   > css-lux
+  
   > css-materia
+  
   > css-minty
+  
   > css-pulse
+  
   > css-sandstone
+  
   > css-simplex
+  
   > css-sketchy
+  
   > css-slate
+  
   > css-solar
+  
   > css-spacelab
+  
   > css-superhero
+  
   > css-united
+  
   > css-yeti
 - customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
 - customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
