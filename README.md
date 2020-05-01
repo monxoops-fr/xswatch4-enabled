@@ -1,4 +1,5 @@
-xSwatch4 (Bootstrap 4) theme for XOOPS 2.5.10
+xSwatch4
+=======
 
 xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
 
@@ -14,20 +15,17 @@ Features:
 Customize xSwatch:
 
 - 21 themes in 1 theme (Preview : [Bootswatch](https://bootswatch.com/))
-In theme.tpl file : 
-	<{* pick the css directory you want to use in the assign var="xswatchCss" value below. *}>
-	<{* Valid values are css-cerulean, css-slate, css-darkly, css-journal... *}>
-	<{assign var="xswatchCss" value="css-cerulean"}>
-	<link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/xoops.css">
-	<link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/cookieconsent.css">
+  In the file _tpl/xswatchCss.tpl_, edit the bottom line to match the Bootswatch theme of your 
+  choice. By default, the line reads **css-cerulean**. To change to a dark theme, like the one 
+  used in the original xswatch for example, change it to **css-slate**.
+  You can pick from any of the 21 variations listed in the comments in _tpl/xswatchCss.tpl_  
 - customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
 - customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
 - enable a slider in theme.tpl and tpl/slider.tpl
 - customize cookie consent in tpl/cookieConsent.tpl, or disable include in theme.tpl
 - customize or disable inbox alert in theme.tpl and tpl/inboxAlert.tpl
 - for best experience install both the PM and Profile modules
-- customize xmnews blocks : for column blocks, copy xmnews_block_colonnes.tpl to xmnews_block.tpl (copy xmnews_block_lignes.tpl to xmnews_block.tpl to return to initial state)
+- customize xmnews block : for column blocks, copy xmnews_block_colonnes.tpl to xmnews_block.tpl (copy xmnews_block_lignes.tpl to xmnews_block.tpl to return to initial state)
 
 In addition to templates for the modules included in XOOPS (pm, profile and system,) Bootstrap v4.4 templates are included for the following modules:
 
@@ -45,7 +43,9 @@ In addition to templates for the modules included in XOOPS (pm, profile and syst
 - xmnews - [GregMage/xmnews](https://github.com/GregMage/xmnews)
 - xoopsfaq - [XoopsModules25x/xoopsfaq](https://github.com/XoopsModules25x/xoopsfaq)
 
+
 Credits:
+
 - Grégory Mage - [xm modules templates](https://github.com/GregMage)
 - Twitter Bootstrap - [Bootstrap](https://getbootstrap.com)
 - Angelo Rocha - [xBootStrap](https://github.com/angelorocha/xbootstrap)
