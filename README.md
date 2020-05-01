@@ -3,7 +3,8 @@
 
 #### Adaptation pour XOOPS 2.5.10 du thème xswatch4 en Bootsrap 4 (créé par geekwright pour XOOPS 2.5.11)
 #### Fonctionne aussi sous XOOPS 2.5.11
-###### By alain01
+
+By alain01
 ---
 
 xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
