@@ -1,6 +1,6 @@
 ﻿-------------------------------------------------
 Version	: 1.0
-Date	: 01.05.2020
+Date	: 02.05.2020
 -------------------------------------------------
 
 Première version du thème xswatch4-enabled
@@ -12,6 +12,7 @@ Améliorations / Ajouts :
 - Ajout de la traduction italienne (luciorota)
 - Ajout de la traduction espagnole (Alain01)
 - Mise à jour des dernières surcharges de modules disponibles
+- Ajout fichier css/my_css.css pour son propre code css + surcharge des définitions Bootstrap
 
 Adaptation pour XOOPS 2.5.10 :
 
