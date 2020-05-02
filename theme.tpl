@@ -27,8 +27,9 @@
 
     <title><{if $xoops_dirname == "system"}><{$xoops_sitename}><{if $xoops_pagetitle !=''}> - <{$xoops_pagetitle}><{/if}><{else}><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{$xoops_sitename}><{/if}><{/if}></title>
 
-<{$xoops_module_header}>
+	<{$xoops_module_header}>
     <link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>">
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/my_css.css">
 </head>
 
 <body id="<{$xoops_dirname}>">

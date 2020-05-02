@@ -31,14 +31,15 @@ The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerul
   > css-lumen - css-lux - css-materia - css-minty - css-pulse - css-sandstone - css-simplex 
   
   > css-sketchy - css-slate - css-solar - css-spacelab - css-superhero - css-united - css-yeti
-  
-- customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
-- customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
-- enable a slider in theme.tpl and tpl/slider.tpl
-- customize cookie consent in tpl/cookieConsent.tpl, or disable include in theme.tpl
-- customize or disable inbox alert in theme.tpl and tpl/inboxAlert.tpl
-- for best experience install both the PM and Profile modules
-- customize xmnews block : for column blocks, copy xmnews_block_colonnes.tpl to xmnews_block.tpl (copy xmnews_block_lignes.tpl to xmnews_block.tpl to return to initial state)
+
+- Customize your own css code in css/my_css.css file. You can overload bootstrap definitions
+- Customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
+- Customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
+- Enable a slider in theme.tpl and tpl/slider.tpl
+- Customize cookie consent in tpl/cookieConsent.tpl, or disable include in theme.tpl
+- Customize or disable inbox alert in theme.tpl and tpl/inboxAlert.tpl
+- For best experience install both the PM and Profile modules
+- Customize xmnews block : for column blocks, copy xmnews_block_colonnes.tpl to xmnews_block.tpl (copy xmnews_block_lignes.tpl to xmnews_block.tpl to return to initial state)
 
 In addition to templates for the modules included in XOOPS (pm, profile and system,) Bootstrap v4.4 templates are included for the following modules:
 
