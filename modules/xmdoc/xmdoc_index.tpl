@@ -1,4 +1,4 @@
-<{if $cat}>
+<{if $cat|default:false}>
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.php"><{$index_module}></a></li>
@@ -12,7 +12,7 @@
 		</ol>
 	</nav>
 <{/if}>
-<{if $index_header}>
+<{if $index_header|default:'' != ''}>
     <div class="row">
         <div class="col-sm-12">
             <{$index_header}>
@@ -27,12 +27,12 @@
 	<{foreach item=categories from=$cat_array}>
 		<div class="col-6 col-sm-4 col-md-3 col-lg-2 p-2 
 			<{if $cat && $categories.id == $doc_cid}>
-				bg-info
+				bg-secondary
 			<{/if}>">
 			<a title="<{$categories.name}>" href="<{$xoops_url}>/modules/xmdoc/index.php?doc_cid=<{$categories.id}>">
-				<div class="card">
-					<div class="card-header text-center">						
-						<{$categories.name}>
+				<div class="card xmdoc-border" <{if $categories.color != false}>style="border-color : <{$categories.color}>;"<{/if}>>
+					<div class="card-header text-center" <{if $categories.color != false}>style="background-color : <{$categories.color}>;"<{/if}>>						
+						<h6 class="mb-0 text-white"><{$categories.name}></h6>
 					</div>
 					<div class="card-body h-md-550 text-center">
 						<div class="row" style="height: 90px;">
@@ -62,31 +62,35 @@
 </div>
 <{if $cat}>
 <hr />
-	<div class="row mt-4">
-		<div class="col-3 col-md-4 text-center">
+	<div class="row mb-2">
+		<div class="col-3 col-md-4 col-lg-3 text-center">
 			<img class="rounded img-fluid" src="<{$category_logo}>" alt="<{$category_name}>">
 		</div>
-		<div class="col-9 col-md-8 py-2">
+		<div class="col-9 col-md-8 col-lg-9 " style="padding-bottom: 5px; padding-top: 5px;">
 			<h4 class="mt-0"><{$category_name}></h4>
 			<{$category_description}>
 		</div>
 	</div>
 <{/if}>
-<{if $document_count != 0}>
+<{if $document_count|default:0 != 0}>
 	<hr />
 	<div class="row">
 		<{foreach item=document from=$documents}>
 			<div class="col-sm-12 col-md-6 col-lg-4 p-2">
-				<div class="card">
-					<div class="card-header text-center text-truncate d-none d-sm-block">
-						<a class="text-decoration-none" title="<{$document.name}>" href="<{$xoops_url}>/modules/xmdoc/download.php?cat_id=<{$document.categoryid}>&amp;doc_id=<{$document.id}>" target="_blank">
-							<{$document.name}>
-						</a>
+				<div class="card xmdoc-border" <{if $document.color != false}>style="border-color : <{$document.color}>;"<{/if}>>
+					<div class="card-header text-center text-truncate d-none d-sm-block" <{if $document.color != false}>style="background-color : <{$document.color}>;"<{/if}>>
+						<div class="d-flex justify-content-center text-center">
+							<a class="text-decoration-none" title="<{$document.name}>" href="<{$xoops_url}>/modules/xmdoc/download.php?cat_id=<{$document.categoryid}>&amp;doc_id=<{$document.id}>" target="_blank">
+								<h5 class="mb-0 text-white"><{$document.name}></h5>
+							</a>
+						</div>
 					</div>
 					<div class="card-header text-center d-block d-sm-none">
-						<a class="text-decoration-none" title="<{$document.name}>" href="<{$xoops_url}>/modules/xmdoc/download.php?cat_id=<{$document.categoryid}>&amp;doc_id=<{$document.id}>" target="_blank">
-							<{$document.name}>
-						</a>
+						<div class="d-flex justify-content-center text-center">
+							<a class="text-decoration-none" title="<{$document.name}>" href="<{$xoops_url}>/modules/xmdoc/download.php?cat_id=<{$document.categoryid}>&amp;doc_id=<{$document.id}>" target="_blank">
+								<h5 class="mb-0 text-white"><{$document.name}></h5>
+							</a>
+						</div>
 					</div>
 					<div class="card-body text-center">
 						<div class="row d-flex justify-content-center">
@@ -145,7 +149,7 @@
 										  <span class="fa fa-calendar fa-fw" aria-hidden="true"></span> <{$smarty.const._MA_XMDOC_FORMDOC_DATE_BT}>
 										  <figcaption class="figure-caption text-center"><{$document.date}></figcaption>
 									</figure>
-									<{if $document.mdate}>
+									<{if $document.mdate|default:''}>
 									<figure class="figure text-muted my-1 pr-2 text-center border-right border-secondary">
 										  <span class="fa fa-repeat fa-fw" aria-hidden="true"></span> <{$smarty.const._MA_XMDOC_FORMDOC_MDATE_BT}>
 										  <figcaption class="figure-caption text-center"><{$document.mdate}></figcaption>
@@ -203,7 +207,7 @@
 			</div>			
 		<{/foreach}>
 	</div>
-	<{if $nav_menu}>
+	<{if $nav_menu|default:false}>
 		<div class="row">
 			<div class="col-sm-12" style="padding-bottom: 10px; padding-top: 5px; padding-right: 60px; text-align: right;">
 				<{$nav_menu}>
@@ -217,7 +221,7 @@
 	</div>
 <{/if}>
 
-<{if $index_footer}>
+<{if $index_footer|default:'' != ''}>
     <div class="row pb-2">
         <div class="col-sm-12">
             <hr />

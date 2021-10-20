@@ -14,7 +14,11 @@
 		<div class="w-100"></div>
 		<div class="col-3 col-md-2 xoops-comment-author aligncenter">
 			<{if $comment.poster.id != 0}>
-				<img src="<{$xoops_upload_url}>/<{$comment.poster.avatar}>" class="img-fluid rounded image-avatar" alt="">
+				<{if $comment.poster.avatar != 'blank.gif'}>
+				<img src="<{$xoops_upload_url}>/<{$comment.poster.avatar}>" class="img-fluid img-rounded img-thumbnail">
+				<{else}>
+				<img src="<{$xoops_imageurl}>images/no-avatar.png" class="img-fluid img-rounded img-thumbnail">
+				<{/if}>
 				<ul class="list-unstyled">
 					<li><strong class="poster-rank hidden-xs"><{$comment.poster.rank_title}></strong></li>
 					<li><img src="<{$xoops_upload_url}>/<{$comment.poster.rank_image}>" alt="<{$comment.poster.rank_title}>"
@@ -31,7 +35,7 @@
 			<{/if}>
 		</div>
 		<div class="col-9 col-md-10 xoops-comment-text">
-			<h4><{$comment.image}><{$comment.title}></h4>
+			<h4><{$comment.image|default:''}><{$comment.title|default:''}></h4>
 
 			<p class="message-text"><{$comment.text}></p>
 		</div>
@@ -61,6 +65,6 @@
 			<{else}>
 				&nbsp;
 			<{/if}>
-		</div>	
-	</div>	
+		</div>
+	</div>
 </div>

@@ -51,7 +51,7 @@ define('THEME_EMAIL', 'Votre Courriel');
 
 //Cookie consent -- escape for javascript if needed
 define('THEME_COOKIE_MESSAGE', 'Ce site utilise des cookies pour vous fournir la meilleure expérience sur notre site.');
-define('THEME_COOKIE_DISMISS', 'Compris !');
+define('THEME_COOKIE_DISMISS', 'Je l\'ai !');
 define('THEME_COOKIE_LEARNMORE', 'Infos supplémentaires');
 
 define('THEME_SELECT_ALL', 'Tout sélectionner');
@@ -66,8 +66,8 @@ define('THEME_TOOLBAR_SYSTEM_MODULE', 'Module Système');
 define('THEME_TOOLBAR_GENERAL_SETTINGS', 'Préférences générales');
 define('THEME_TOOLBAR_TOOLS', 'Outils');
 define('THEME_TOOLBAR_SYSTEM_OPTIONS', 'Options du système');
-define('THEME_TOOLBAR_DEBUGMODE', 'Mode Debug');
-define('THEME_TOOLBAR_THIS_MODULE', 'Ce Module');
+define('THEME_TOOLBAR_DEBUGMODE', 'Mode débogage');
+define('THEME_TOOLBAR_THIS_MODULE', 'Ce module');
 define('THEME_TOOLBAR_MODULES', 'Modules');
 define('THEME_TOOLBAR_BLOCKS', 'Blocs');
 define('THEME_TOOLBAR_TEMPLATES', 'Modèles');
@@ -89,26 +89,17 @@ define('THEME_TOOLBAR_CLOSE', 'Fermer');
 define('THEME_TOOLBAR_SHOW_BLOCK_EDIT', 'Édition du Bloc');
 define('THEME_TOOLBAR_EDIT_THIS_BLOCK', 'Éditer ce Bloc');
 
-define('THEME_COMMENT_ADD', 'Ajouter un commentaire');
-define('THEME_COMMENT_OPTIONS', 'Options d\'affichage des commentaires :');
+define('THEME_COMMENT_ADD', 'Ajoutez votre commentaire');
+define('THEME_COMMENT_OPTIONS', 'Options d\'affichage des commentaires');
 
-define('THEME_PERMISSIONS_LEGEND', 'Permissions &amp; Légendes');
+define('THEME_PERMISSIONS_LEGEND', 'Autorisations &amp; Légende');
 
-define('THEME_INBOX_ALERT', '!!! Message(s) privé(s) !!!');
-define('THEME_INBOX_LINK', 'Cliquez ici pour atteindre votre boite mail !');
+define('THEME_INBOX_ALERT', 'Alerte MP');
+define('THEME_INBOX_LINK', 'Cliquez ici pour voir votre boîte de réception!');
 
-define('THEME_EVENT_DOWNLOADS', 'Evènement de Téléchargements');
+define('THEME_EVENT_DOWNLOADS', 'Téléchargements d\'événements');
 define('THEME_FILE_NAME', 'Fichier');
 define('THEME_FILE_SIZE', 'Taille');
 
-define('THEME_CONTROL_NEXT', 'Suivant');
+define('THEME_CONTROL_NEXT', 'Prochain');
 define('THEME_CONTROL_PREVIOUS', 'Précédent');
-
-/*
-define('THEME_NOTREGISTERED', 'Pas encore inscrit ? <!-- <a href="/modules/profile/register.php"> --> <span class="text-muted">Inscrivez-vous !</span><!--</a>-->');
-define('THEME_LOSTPASSWORD', 'Mot de passe oublié ?');
-define('THEME_NOPROBLEM', 'Saisissez l\'adresse courriel de votre compte.');
-define('THEME_YOUREMAIL', 'Votre Courriel :');
-define('THEME_SENDPASSWORD', 'Envoyer le mot de passe');
-define('THEME_REMEMBERME', 'Se souvenir de moi');
-*/

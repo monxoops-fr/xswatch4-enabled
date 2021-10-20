@@ -90,7 +90,7 @@ define('THEME_TOOLBAR_SHOW_BLOCK_EDIT', 'Block Edits');
 define('THEME_TOOLBAR_EDIT_THIS_BLOCK', 'Edit this block');
 
 define('THEME_COMMENT_ADD', 'Add Your Comment');
-define('THEME_COMMENT_OPTIONS', 'Comment View Options:');
+define('THEME_COMMENT_OPTIONS', 'Comment View Options');
 
 define('THEME_PERMISSIONS_LEGEND', 'Permissions &amp; Legend');
 
@@ -103,3 +103,9 @@ define('THEME_FILE_SIZE', 'Size');
 
 define('THEME_CONTROL_NEXT', 'Next');
 define('THEME_CONTROL_PREVIOUS', 'Previous');
+
+// Bloc online
+define('THEME_OL_MEMBERS', 'Members');
+define('THEME_OL_MEMBER', 'Member');
+define('THEME_OL_GUESTS', 'Guests');
+define('THEME_OL_GUEST', 'Guest');
