@@ -1,38 +1,44 @@
 # xSwatch4-enabled
-
+==================
 
 **Adaptation pour XOOPS 2.5.10 du thème xSwatch 4 en Bootstrap 4 (créé par geekwright pour XOOPS 2.5.11)**
-
 **Fonctionne aussi sous XOOPS 2.5.11**
 
 By alain01
 
----
 
-xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.4.1.
+xSwatch4
+=======
+
+xSwatch4 is a theme for [XOOPS 2.5.11](https://xoops.org) that is based on [Bootstrap](https://getbootstrap.com) 4.6
 
 The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerulean/).
 
-### Features:
+Features:
 
 - Emphasis on better mobile experience
 - Self hosted, with no off domain resources required
 - Built in cookie consent
 - Administrator toolbar with block edit feature
+- Switch between light and dark theme based on media queries
 
-### Customize xSwatch:
+Customize xSwatch:
 
 - 21 themes in 1 theme (Preview : [Bootswatch](https://bootswatch.com/))
-  You can pick from any of the 21 variations theme. 'cerulean' is the default thème.
-  In the /css directory, modify the 3 files (bootstrap.min.css, cookieconsent.css and xoops.css) the string "css-cerulean" to a valid value.
-  Valid values are:
-  > css-cerulean - css-cosmo - css-cyborg - css-darkly - css-flaty - css-journal - css-litera
-  
-  > css-lumen - css-lux - css-materia - css-minty - css-pulse - css-sandstone - css-simplex 
-  
-  > css-sketchy - css-slate - css-solar - css-spacelab - css-superhero - css-united - css-yeti
-
-- Customize your own css code in css/my_css.css file. You can overload bootstrap definitions
+- Dual theme light and dark media query responsive operation - 
+  Two files control which themes are used, _tpl/xswatchCss.tpl_ and _tpl/xswatchDarkCss.tpl_.
+  In the file _tpl/xswatchCss.tpl_, edit the bottom line to match the Bootswatch theme of your
+  choice for use with prefers-color-scheme light media queries. By default, the line reads 
+  **css-cerulean**. In the file _tpl/xswatchDarkCss.tpl_, edit the bottom line to match the Bootswatch theme of your
+  choice for use with dark media queries.  By default, the line reads **css-slate**. 
+  Your site will then follow the use's browser or OS preference to choose light or dark.
+- Single theme operation - 
+  Edit _tpl/xswatchDarkCss.tpl_ and delete the line with the file name, and the theme will
+  be locked to whatever theme is specified in the file _tpl/xswatchCss.tpl_. No consideration
+  of prefers-color-scheme queries will be made. In the file _tpl/xswatchCss.tpl_, edit the 
+  bottom line to match the Bootswatch theme of your choice. By default, the line reads 
+  **css-cerulean**. To change to a dark theme, for example, change it to **css-slate**.
+  You can pick from any of the 21 variations listed in the comments in _tpl/xswatchCss.tpl_  
 - Customize the Navigation Bar in tpl/nav-menu.tpl and language/*/main.php to match your system and installed modules
 - Customize the Jumbotron in theme.tpl and tpl/jumbotron.tpl
 - Enable a slider in theme.tpl and tpl/slider.tpl
@@ -40,6 +46,8 @@ The default theme is based on [Bootswatch Cerulean](https://bootswatch.com/cerul
 - Customize or disable inbox alert in theme.tpl and tpl/inboxAlert.tpl
 - For best experience install both the PM and Profile modules
 - Customize xmnews block : for column blocks, copy xmnews_block_colonnes.tpl to xmnews_block.tpl (copy xmnews_block_lignes.tpl to xmnews_block.tpl to return to initial state)
+- Customize _css/my_xoops.css to add your css definitions and override Bootstrap definitions for the light variant or the unique variant
+- Customize _css/my_xoops_dark.css to add your css definitions and override Bootstrap definitions for the dark variant
 
 In addition to templates for the modules included in XOOPS (pm, profile and system,) Bootstrap v4.4 templates are included for the following modules:
 
@@ -58,7 +66,7 @@ In addition to templates for the modules included in XOOPS (pm, profile and syst
 - xoopsfaq - [XoopsModules25x/xoopsfaq](https://github.com/XoopsModules25x/xoopsfaq)
 
 
-### Credits:
+Credits:
 
 - Grégory Mage - [xm modules templates](https://github.com/GregMage)
 - Twitter Bootstrap - [Bootstrap](https://getbootstrap.com)
