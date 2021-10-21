@@ -13,16 +13,14 @@
 		  </ol>
 		</nav>
 	<{/if}>
-		<{if $news_cid_options|default:false}>
-			<form class="form-inline mb-3" id="form_news_tri" name="form_news_tri" method="get" action="index.php">
-				<div class="form-group">
-					<label><{$smarty.const._MA_XMNEWS_NEWS_SELECTCATEGORY}>&nbsp;</label>
-					<select class="form-control form-control-sm" name="news_filter" id="news_filter" onchange="location='index.php?news_cid='+this.options[this.selectedIndex].value">
-						<{$news_cid_options}>
-					</select>
-				</div>
-			</form>
-		<{/if}>
+		<form class="form-inline mb-3" id="form_news_tri" name="form_news_tri" method="get" action="index.php">
+			<div class="form-group">
+				<label><{$smarty.const._MA_XMNEWS_NEWS_SELECTCATEGORY}>&nbsp;</label>
+				<select class="form-control form-control-sm" name="news_filter" id="news_filter" onchange="location='index.php?news_cid='+this.options[this.selectedIndex].value">
+					<{$news_cid_options}>
+				</select>
+			</div>
+		</form>
 	<{if $cat|default:false}>
 		<div class="row mb-2">
 			<{if $category_logo != ''}>
@@ -43,7 +41,7 @@
 					<div class="card h-100 xmnews-border" <{if $news.color != false}>style="border-color : <{$news.color}>;"<{/if}>>
 						<div class="card-header" <{if $news.color != false}>style="background-color : <{$news.color}>;"<{/if}>>
 							<div class="d-flex justify-content-center text-center">
-								<h5 class="mb-0 text-white"><{$news.title}><{if $news_cid == 0}><br /><a href="index.php?news_cid=<{$news.cid}>"><span class="badge badge-pill badge-dark" style="font-weight: lighter;" ><{$news.cat_name}></span><{/if}></a></h5>
+								<h5 class="mb-0 text-white"><{$news.title}></h5>
 							</div>
 						</div>
 

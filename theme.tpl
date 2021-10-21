@@ -15,22 +15,38 @@
 
     <link href="<{$xoops_url}>/favicon.ico" rel="shortcut icon">
 
-	<{* Edit tpl/xswatchCss.tpl to pick the css directory you want to use *}>
-    <{include file="$theme_name/tpl/xswatchCss.tpl" assign="xswatchCss"}>
-    <{* Edit tpl/xswatchDarkCss.tpl to pick the css directory you want to use for dark mode *}>
-    <{include file="$theme_name/tpl/xswatchDarkCss.tpl" assign="xswatchDarkCss"}>
-    <{* if xswatchDarkCss doesn't set a dark mode theme, just use one for all *}>
-    <{if $xswatchDarkCss == ''}>
-        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/xoops.css">
-        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}><{$xswatchCss}>/cookieconsent.css">
+    <{* set $DarkCss = "on" if you want to use light and dark theme *}>
+    <{* set $DarkCss = "off" if you want to use an unique theme *}>
+
+	<{* For light variant and unique variant: *}>
+    <{* Edit css/bootstrap.min.css,  css/cookieconsent.css and xoops.css to pick the css directory you want to use *}>
+    <{* Edit css/my_xoops.css to customize CSS and override the Bootstrap CSS file for the light and unique variant *}>
+
+    <{* For dark variant: *}>
+    <{* Edit css/bootstrap_dark.min.css,  css/cookieconsent_dark.css and xoops_dark.css to pick the css directory you want to use *}>
+    <{* Edit css/my_xoops_dark.css to customize CSS and override the Bootstrap CSS file for the dark variant *}>
+
+
+    <{assign var="DarkCss" value="on"}>
+
+    <{if $DarkCss == "off"}>
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/xoops.css">
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/cookieconsent.css">
+        <{* Edit css/my_xoops.css to customize your css definitions and override Bootstrap definitions for the unique variant *}>
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/my_xoops.css">
     <{else}>
-        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}><{$xswatchCss}>/xoops.css">
-        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}><{$xswatchCss}>/bootstrap.min.css">
-        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}><{$xswatchCss}>/cookieconsent.css">
-        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}><{$xswatchDarkCss}>/xoops.css">
-        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}><{$xswatchDarkCss}>/bootstrap.min.css">
-        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}><{$xswatchDarkCss}>/cookieconsent.css">
+        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}>css/xoops.css">
+        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}>css/bootstrap.min.css">
+        <link rel="stylesheet" media="(prefers-color-scheme: light)" href="<{xoImgUrl}>css/cookieconsent.css">
+        <{* Edit css/my_xoops.css to customize your css definitions and override Bootstrap definitions for the light variant *}>
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/my_xoops.css">
+        
+        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}>css/xoops_dark.css">
+        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}>css/bootstrap_dark.min.css">
+        <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="<{xoImgUrl}>css/cookieconsent_dark.css">
+        <{* Edit css/my_xoops_dark.css to customize your css definitions and override Bootstrap definitions for the dark variant *}>
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl}>css/my_xoops_dark.css">
     <{/if}>
 
     <script src="<{$xoops_url}>/browse.php?Frameworks/jquery/jquery.js"></script>
