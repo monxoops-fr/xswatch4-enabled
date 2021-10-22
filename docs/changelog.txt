@@ -1,4 +1,23 @@
-﻿-------------------------------------------------
+------------------------------------------------
+Version	: 2.0
+Date	: 22.10.2021
+-------------------------------------------------
+
+Nouvelle version du thème xswatch4-enabled
+Thème xswatch4 en Bootsrap4 crée par geekwright pour XOOPS 2.5.11
+et adapté par alain01 pour fonctionner également sur un XOOPS 2.5.10
+
+Améliorations / Ajouts :
+
+- Mode clair / mode sombre.
+- Ajout de fichiers CSS pour personnalisation.
+- Mise à jour de Bootstrap 4.4.1 vers 4.6.
+- Optimisation des paramètres de rupture dans le système de grilles de Bootstrap.
+- Amélioration de la syntaxe du footer.
+- Correction du positionnement d'un test de condition (smarty <{ if }>)
+- Divers. 
+ 
+-------------------------------------------------
 Version	: 1.0
 Date	: 02.05.2020
 -------------------------------------------------
