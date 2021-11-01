@@ -1,6 +1,6 @@
 ------------------------------------------------
-Version	: 2.0
-Date	: 22.10.2021
+Version	: 2.1
+Date	: 01.11.2021
 -------------------------------------------------
 
 Nouvelle version du thème xswatch4-enabled
@@ -15,7 +15,7 @@ Améliorations / Ajouts :
 - Optimisation des paramètres de rupture dans le système de grilles de Bootstrap.
 - Amélioration de la syntaxe du footer.
 - Correction du positionnement d'un test de condition (smarty <{ if }>)
-- Divers. 
+- Divers.
  
 -------------------------------------------------
 Version	: 1.0
